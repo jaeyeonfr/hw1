@@ -10,11 +10,15 @@ This should include a short write up describing your approach
 to implementing the function. Note that both code formating / style
 and your writeup matter for your overall grade.
 -->
-
 ```{r}
 fizzbuzz = function(v)
-{
-
+{for (num in v){
+  if (num %% 15==0){print("FizzBuzz")
+  break} 
+  else if (num %% 3==0){print("Fizz")}
+  else if (num %% 5==0){print("Bizz")}
+  else {print(num)}
+}
 }
 ```
 
