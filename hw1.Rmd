@@ -13,7 +13,10 @@ and your writeup matter for your overall grade.
 ```{r}
 fizzbuzz = function(v)
 {for (num in v){
-  if (num %% 15==0){print("FizzBuzz")
+  if (is.complex(num)) {print(num)}
+  else if (is.infinite(num)) {print(num)}
+  else if (is.character(num)) {print(num)}
+  else if (num %% 15==0){print("FizzBuzz")
   break} 
   else if (num %% 3==0){print("Fizz")}
   else if (num %% 5==0){print("Bizz")}
